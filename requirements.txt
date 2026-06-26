@@ -1,0 +1,11 @@
+streamlit
+fastapi
+uvicorn
+pypdf
+sentence-transformers
+chromadb
+networkx
+requests
+python-dotenv
+duckduckgo-search
+Pillow

@@ -1,0 +1,15 @@
+# Environment
+.env
+venv/
+__pycache__/
+
+# Databases
+*.db
+
+# Vector store
+talkio_vectordb/
+
+# Python cache
+*.pyc
+*.pyo
+.DS_Store
