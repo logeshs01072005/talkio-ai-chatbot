@@ -1,6 +1,5 @@
 streamlit
-fastapi
-uvicorn
+google-genai
 pypdf
 sentence-transformers
 chromadb
