@@ -19,7 +19,13 @@ load_dotenv()
 # Config
 # -----------------------------
 API_URL     = "http://127.0.0.1:8000"
-API_KEY     = os.getenv("API_KEY", "")
+
+# Works locally (.env) AND on Streamlit Cloud (secrets)
+try:
+    API_KEY = st.secrets["API_KEY"]
+except:
+    API_KEY = os.getenv("API_KEY", "")
+
 client      = genai.Client(api_key=API_KEY)
 MODEL       = "gemini-2.5-flash-lite"
 TEMPERATURE = 0.3
